@@ -10,7 +10,7 @@ try:
 except ImportError:
 	os.system("pip2 install requests")
 
-JaMaLi = ['Op Bolty']
+JaMaLi = ['Op Bolti Public']
 JaMaLichoice = random.choice(JaMaLi)
 agents = [
  'Mozilla/5.0 (Windows NT 6.0; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0',
@@ -281,7 +281,7 @@ def crack():
     os.system('clear')
     print logo
     print ''
-    print '\x1b[1;0m 1. \033[1;96mClone 3 Links\033[0m \n 2. \033[1;96mClone Single id\033[0m' ##Thanks IQRA.
+    print '\x1b[1;0m 1. \033[1;96mClone 3 Links\033[0m \n 2. \033[1;96mClone Single id\033[0m' ##Thanks SJ.
     print ''
     crack_select()
 
