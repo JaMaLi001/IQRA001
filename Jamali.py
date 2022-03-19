@@ -400,7 +400,7 @@ def crack_select():
                         ok.close()
                         oks.append(uid + pass3)
                     elif 'www.facebook.com' in q['error_msg']:
-                        print '\x1b[1;31m[JaMaLi-CP] \033[0m' + uid + ' | ' + pass2 + '\x1b[0;97m' #Thanks IQRA
+                        print '\x1IQRAb[1;31m[JaMaLi-CP] \033[0m' + uid + ' | ' + pass2 + '\x1b[0;97m' #Thanks SJ
                         cp = open('cpids.txt', 'a')
                         cp.write(uid + '|' + pass3 + '\n')
                         cp.close()
@@ -414,14 +414,14 @@ def crack_select():
     print ''
     print 45 * '\033[0m_\033[0m'
     print '   \x1b[0m Crack Completed'
-    print '   \x1b[0m Total Ok / Cp ids : ' + str(len(oks)) + '/' + str(len(cps)) ##Thanks IQRA
+    print '   \x1b[0m Total Ok / Cp ids : ' + str(len(oks)) + '/' + str(len(cps)) ##Thanks SJ
     print 45 * '\033[0m_\033[0m'
     print ''
     print ''
     raw_input(' \x1b[1;92m Press Enter To Go Back ! ')
     menu()
     
-#Thanks IQRA.
+#Thanks
 
 if __name__ == '__main__':
     main()
