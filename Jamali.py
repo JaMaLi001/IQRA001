@@ -38,8 +38,7 @@ header = {'x-fb-connection-bandwidth': repr(bd), 'x-fb-sim-hni': repr(sim), 'x-f
 
 logo = """
 
-\033[0;92m\                        ,-.  .---. ,---.    .--.   
-|(| ( .-. \| .-.\  /
+\033[0;92m\
    ___      ___  ___      _     _ 
   |_  |     |  \/  |     | |   (_)
     | | __ _| .  . | __ _| |    _ 
@@ -47,8 +46,8 @@ logo = """
 /\__/ / (_| | |  | | (_| | |___| |
 \____/ \__,_\_|  |_/\__,_\_____/_|   
 \n\033[0m----------------------------------
-\033[1;92mAuthor \033[1;93m: IQRA
-\033[1;92mFb \033[1;93m: IQRA
+\033[1;92mAuthor \033[1;93m: SJ.Baloch
+\033[1;92mFb \033[1;93m: SJ.Balochl
 \033[1;92mDisclaimer \033[1;93m: Its For Educational Purpose
 \033[0m----------------------------------
 
@@ -130,7 +129,7 @@ def log_fb():
         print ''
         uid = raw_input(' Email / id : ')
         passw = raw_input(' Password: ')
-        data = requests.get('https://b-api.facebook.com/method/auth.login?format=json&email=' + uid + '&password=' + passw + '&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&user-agent=Dalvik/2.1.0 (Linux; U; Android 6.0.1; SM-J700F Build/MMB29K) [FBAN/Orca-Android;FBAV/181.0.0.12.78;FBPN/com.facebook.orca;FBLC/tr_TR;FBBV/122216364;FBCR/Turk Telekom;FBMF/samsung;FBBD/samsung;FBDV/SM-J700F;FBSV/6.0.1;FBCA/armeabi-v7a:armeabi;FBDM{density=3.0,width=900,height=1600}&cpl=true', headers=header).text ##Thanks SAMI
+        data = requests.get('https://b-api.facebook.com/method/auth.login?format=json&email=' + uid + '&password=' + passw + '&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&user-agent=Dalvik/2.1.0 (Linux; U; Android 6.0.1; SM-J700F Build/MMB29K) [FBAN/Orca-Android;FBAV/181.0.0.12.78;FBPN/com.facebook.orca;FBLC/tr_TR;FBBV/122216364;FBCR/Turk Telekom;FBMF/samsung;FBBD/samsung;FBDV/SM-J700F;FBSV/6.0.1;FBCA/armeabi-v7a:armeabi;FBDM{density=3.0,width=900,height=1600}&cpl=true', headers=header).text ##Thanks SJ.BALOCH
         q = json.loads(data)
         if 'access_token' in q:
             sav = open('access_token.txt', 'w')
