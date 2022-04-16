@@ -132,7 +132,7 @@ class __crack__:
 		try:
 			self.apk = input(" [*] File Name : ")
 			print (' [*]=============================================')
-			self.id = IMTIAZ(self.apk).read().splitlines()
+			self.id = IQRA(self.apk).read().splitlines()
 			IQRA_BRAND(' [*] Total ID : %s'%(len(self.id)))
 			print (' [✓] Are You Went To Continue : Type Y')
 		except:
