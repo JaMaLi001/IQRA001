@@ -136,7 +136,7 @@ class __crack__:
 			IQRA_BRAND(' [*] Total ID : %s'%(len(self.id)))
 			print (' [✓] Are You Went To Continue : Type Y')
 		except:
-			brand.py('\n [!] File Not Found In Storage')
+			print ('\n [!] File Not Found In Storage')
 			input('\n [*] Press Enter To Back');readline___Public_Xml();print("[M] Menual Password ");print('[D] Default Password ')
      
 		_jokowi_kontol_ = input(" [*] Choose : ")
