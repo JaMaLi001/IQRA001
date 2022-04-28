@@ -307,9 +307,9 @@ class __crack__:
 						uid, name = yntkts.split('|')
 						xz = name.split(' ')
 						if len(xz) == 1:
-							pwx = [first, xz[0] + 'last', xz[0] + 'Frist', xz[0] + 'Last']
+							pwx = [first, xz[0] + 'last', xz[0] + 'First', xz[0] + 'Last']
 						elif len(xz) == 2:
-							pwx = [first123, xz[0] + 'last123', xz[0] + 'Frist123', xz[0] + 'Last1234']
+							pwx = [first123, xz[0] + 'last123', xz[0] + 'first1234', xz[0] + 'first786']
 						elif len(xz) == 3:
 							pwx = [name, xz[0]+xz[1]]
 						elif len(xz) == 4:
